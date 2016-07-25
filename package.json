@@ -4,7 +4,7 @@
   "description": "",
   "main": "globa.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha **/*-spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,12 @@
     "express": "^4.14.0",
     "socket.io": "^1.4.8",
     "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "nock": "^8.0.0",
+    "rewire": "^2.5.2",
+    "sinon": "^1.17.4"
   }
 }
